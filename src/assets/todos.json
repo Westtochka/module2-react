@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "text": "Work every day eight hours ",
+    "complited": true
+  },
+  {
+    "id": 2,
+    "text": "Learn every day React two hours ",
+    "complited": false
+  },
+  {
+    "id": 3,
+    "text": "To do homework with Dima and learn English, walk and say about humanity ",
+    "complited": false
+  }
+]
