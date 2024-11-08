@@ -6,6 +6,7 @@ import { nanoid } from "nanoid";
 export const ToDoList = () => {
   const [todos, setTodos] = useState(todosData);
   const [newValue, setNewValue] = useState("");
+
   const handleDeleteTodo = (id) => {
     setTodos((prev) => prev.filter((item) => item.id != id));
   };
@@ -13,7 +14,7 @@ export const ToDoList = () => {
     const newTodo = {
       id: nanoid(),
       text: newValue,
-      complited: true,
+      complited: false,
     };
     setTodos((prev) => [...prev, newTodo]);
     console.log(newValue);
