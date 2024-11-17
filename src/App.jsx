@@ -1,43 +1,46 @@
 // import ContactForm from "./components/ContactForm/ContactForm";
 
+import Form from "./components/Form/Form";
+// import UncontrolledForm from "./components/Form/UncontrolledForm";
+
 // import ColorPicker from "./components/ColorPicker/ColorPicker";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 // import Counter from "./components/Counter/Counter";
 // import Modal from "./components/Modal/Modal";
-import Description from "./components/Description/Description";
-import Feedback from "./components/Feedback/Feedback";
-import Options from "./components/Options/Options";
+// import Description from "./components/Description/Description";
+// import Feedback from "./components/Feedback/Feedback";
+// import Options from "./components/Options/Options";
 // import { ToDoList } from "./components/ToDoList/ToDoList";
-import Vote from "./components/Vote/Vote";
+// import Vote from "./components/Vote/Vote";
 // import feedback from './assets/feedback.json'
 const App = () => {
-  const [feedbackData, setFeedbackData] = useState(
-    () =>
-      JSON.parse(window.localStorage.getItem("feedbackData")) ?? {
-        good: 0,
-        neutral: 0,
-        bad: 0,
-      }
-  );
+  // const [feedbackData, setFeedbackData] = useState(
+  //   () =>
+  //     JSON.parse(window.localStorage.getItem("feedbackData")) ?? {
+  //       good: 0,
+  //       neutral: 0,
+  //       bad: 0,
+  //     }
+  // );
 
-  const totalFeedback =
-    feedbackData.good + feedbackData.neutral + feedbackData.bad;
-  const handleClickByOption = (value) => {
-    setFeedbackData((prev) => ({ ...prev, [value]: prev[value] + 1 }));
-  };
-  const positiveFeedback = Math.round(
-    (feedbackData.good / totalFeedback) * 100
-  );
-  const handleReset = () => {
-    setFeedbackData({
-      good: 0,
-      neutral: 0,
-      bad: 0,
-    });
-  };
-  useEffect(() => {
-    window.localStorage.setItem("feedbackData", JSON.stringify(feedbackData));
-  }, [feedbackData]);
+  // const totalFeedback =
+  //   feedbackData.good + feedbackData.neutral + feedbackData.bad;
+  // const handleClickByOption = (value) => {
+  //   setFeedbackData((prev) => ({ ...prev, [value]: prev[value] + 1 }));
+  // };
+  // const positiveFeedback = Math.round(
+  //   (feedbackData.good / totalFeedback) * 100
+  // );
+  // const handleReset = () => {
+  //   setFeedbackData({
+  //     good: 0,
+  //     neutral: 0,
+  //     bad: 0,
+  //   });
+  // };
+  // useEffect(() => {
+  //   window.localStorage.setItem("feedbackData", JSON.stringify(feedbackData));
+  // }, [feedbackData]);
 
   // const [isOpen, setIsOpen] = useState(false);
   // const openModal = () => setIsOpen(true);
@@ -71,13 +74,13 @@ const App = () => {
       {/* <SearchBox />
   <ContactList /> */}
       {/* <Counter /> */}
-      <Description
+      {/* <Description
         title={"Sip Happens Café"}
         text={
           "Please leave your feedback about our service by selecting one of the options below."
         }
-      />
-      <Options
+      /> */}
+      {/* <Options
         data={feedbackData}
         handleClickByOption={handleClickByOption}
         handleReset={handleReset}
@@ -93,11 +96,13 @@ const App = () => {
         />
       ) : (
         <p>There are not feedback</p>
-      )}
+      )} */}
 
       {/* <Feedback data={feedbackData} /> */}
 
-      <Vote />
+      {/* <Vote /> */}
+      {/* <UncontrolledForm /> */}
+      <Form />
     </div>
   );
 };
