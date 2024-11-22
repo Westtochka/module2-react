@@ -1,0 +1,37 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10 px;
+  padding: 20px;
+  box-shadow: 2px 2px 4px 4px grey;
+  & button {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 4px 4px lightblue;
+  }
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  &span {
+    font-weight: bold;
+  }
+}
+.input {
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 2px 2px 4px 4px lightblue;
+}
+.error {
+  color: red;
+  font-size: 18px;
+}

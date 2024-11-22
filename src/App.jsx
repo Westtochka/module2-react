@@ -1,6 +1,8 @@
 // import ContactForm from "./components/ContactForm/ContactForm";
 
-import Form from "./components/Form/Form";
+// import Form from "./components/Form/Form";
+import OrderForm from "./components/Formik/OrderForm";
+// import UseIdExample from "./components/UseIdExample/UseIdExample";
 // import UncontrolledForm from "./components/Form/UncontrolledForm";
 
 // import ColorPicker from "./components/ColorPicker/ColorPicker";
@@ -102,7 +104,9 @@ const App = () => {
 
       {/* <Vote /> */}
       {/* <UncontrolledForm /> */}
-      <Form />
+      {/* <Form /> */}
+      {/* <UseIdExample /> */}
+      <OrderForm />
     </div>
   );
 };
